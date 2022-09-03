@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "KingOfTheHill";
+    src: url("/Users/codetalk/Desktop/client-blog-copy/assets:fonts/king_of_the_hill-webfont.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: "KingOfTheHill2";
+    src: url("/Users/codetalk/Desktop/client-blog-copy/assets:fonts/king_of_the_hill_2-webfont.woff2") format("woff2"),
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-image: url('images/fence.png');
+    background-position: 40% 29%;
+}
+
+.header h1 {
+    font-size: 60px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #171108;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    font-family: 'KingOfTheHill2';
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #EDE100;
+    color: #DD1A21;
+}
+
+.row {  
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f8f3ec;
+    padding: 20px;
+    font-family: 'Passion One', Sans-serif;
+}
+
+.main {   
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    font-family: 'Passion One', Sans-serif;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #171108;
+    font-family: 'KingOfTheHill2';
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #EDE100;
+    color: #DD1A21;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    font-family: 'Passion One', Sans-serif;
+}
+
+.form-center {
+    margin-top: 6px;
+    padding: 20px 0px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #171108;
+    font-family: 'KingOfTheHill';
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+  
+.fa:hover {
+    opacity: 0.25;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+.row {   
+flex-direction: column;
+}
+}
+
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .contact-container, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
